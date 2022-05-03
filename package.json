@@ -1,5 +1,21 @@
 {
+  "name": "work_0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pug-compile": "pug -w pug/index.pug -o html",
+    "sass-compile": "sass --watch app/sass/main.sass app/css/template.css",
+    "start-server": "http-server ."
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "bootstrap": "^5.1.3",
+    "http-server": "^14.1.0",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.49.8"
   }
 }
