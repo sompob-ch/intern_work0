@@ -9,7 +9,7 @@ html
     nav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3.d-block(data-navbar-on-scroll='data-navbar-on-scroll', style='background-color: rgb(255, 255, 255);')
         .container
             a.navbar-brand(href='home.html')
-                span.fw-bold.text-primary.ms-2 Let&apos;s park
+                span.fw-bold.text-primary.ms-2 Let's park
             button.navbar-toggler.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
                 span.navbar-toggler-icon
             #navbarSupportedContent.collapse.navbar-collapse.border-top.border-lg-0.mt-4.mt-lg-0
@@ -25,52 +25,49 @@ html
         // nav bar บนสุด
         // ==================landing page===================
     section.mt-10.py-0
-    .bg-holder.w-50.bg-right.d-none.d-lg-block(style='margin: top 50px;')
-        img.img(style='width: 750px; height: 650px;', src='../png/carparking.jpg', alt='qrcode')
-    .container
-        .row
-        .col-lg-6.py-5.py-xl-5.py-xxl-7
-            br
-            br
-            br
-            h4.display-3.text-1000.fw-normal(style='font-size: 35px;') Park before arriving !
-            h1.display-3.text-primary.fw-bold Discover nice spaces
-            .pt-5
-                nav
-                    #nav-tab.nav.nav-tabs.voyage-tabs(role='tablist')
-                        button#nav-day-tab.nav-link.active(data-bs-toggle='tab', data-bs-target='#nav-day', type='button', role='tab', aria-controls='nav-home', aria-selected='true')
-                            | Daily
-                            i.fas.fa-map-marker-alt
-                
-                // Day
-                #nav-tabContent.tab-content
-                    #nav-day.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-day-tab')
-                        form.row.g-4.mt-5
-                            .col-sm-6.col-md-6.col-xl-5
-                                .input-group-icon
-                                label.form-label(for='form3Example3cg') arrival day 
-                            .col-sm-6.col-md-6.col-xl-5
-                                .input-group-icon
-                                label.form-label(for='form3Example3cg') arrival time
-                            .col-sm-6.col-md-6.col-xl-5
-                                .input-group-icon
-                                input#inputdateOne.form-control.input-box.form-voyage-control(type='date')
-                                span.nav-link-icon.text-800.fs--1.input-box-icon
-                                    i.fas.fa-calendar
-                            .col-sm-6.col-md-6.col-xl-5
-                                .input-group-icon
-                                input.form-control.input-box.form-voyage-control(placeholder='Enter Your arrival time')
-                                span.nav-link-icon.text-800.fs--1.input-box-icon
-                                    i.fas.fa-calendar
-                // Day
-                .my-5.text-center(style='margin-left: 470px;')
-                    a(href='bookpark.html')
-                    button.btn.btn-lg.btn-warning.hover-top.btn-glow.rounded-pill.border-0(type='button') Find parking
-                // ปุ่ม submit ไปหน้า bookpark
-    // ===================landingpage=============================
+        .bg-holder.w-50.bg-right.d-none.d-lg-block(style='margin: top 50px;')
+            img(src='carparking.png') 
+        .container
+            .row
+                .col-lg-6.py-5.py-xl-5.py-xxl-7
+                    br
+                    br
+                    br
+                    h4.display-3.text-1000.fw-normal(style='font-size: 35px;') Park before arriving !
+                    h1.display-3.text-primary.fw-bold Discover nice spaces
+                    .pt-5
+                        nav
+                            #nav-tab.nav.nav-tabs.voyage-tabs(role='tablist')
+                                button#nav-day-tab.nav-link.active(data-bs-toggle='tab', data-bs-target='#nav-day', type='button', role='tab', aria-controls='nav-home', aria-selected='true')
+                                    | Daily
+                                    i.fas.fa-map-marker-alt
+                        // Day
+                        #nav-tabContent.tab-content
+                            #nav-day.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-day-tab')
+                                form.row.g-4.mt-5
+                                    .col-sm-6.col-md-6.col-xl-5
+                                        .input-group-icon
+                                        label.form-label(for='form3Example3cg') arrival day 
+                                    .col-sm-6.col-md-6.col-xl-5
+                                        .input-group-icon
+                                        label.form-label(for='form3Example3cg') arrival time
+                                    .col-sm-6.col-md-6.col-xl-5
+                                        .input-group-icon
+                                        input#inputdateOne.form-control.input-box.form-voyage-control(type='date')
+                                        span.nav-link-icon.text-800.fs--1.input-box-icon
+                                            i.fas.fa-calendar
+                                    .col-sm-6.col-md-6.col-xl-5
+                                        .input-group-icon
+                                        input.form-control.input-box.form-voyage-control(placeholder='Enter Your arrival time')
+                                        span.nav-link-icon.text-800.fs--1.input-box-icon
+                                            i.fas.fa-calendar
+                        // Day
+                        .my-5.text-center(style='margin-left: 470px;')
+                            a(href='bookpark.html')
+                            button.btn.btn-lg.btn-warning.hover-top.btn-glow.rounded-pill.border-0(type='button') Find parking
+                        // ปุ่ม submit ไปหน้า bookpark
+            // ===================landingpage=============================
 
-
-    
     section#howitworks.py-0
   .container
     .row
@@ -96,10 +93,7 @@ html
         h5.text-primary.text-center.mt-3 And park!
         p.text-center.mx-xl-7
           | Upon arrival, just show your reservation in the car park. There is no need to print anything out!
-
-
-    
-                
+        
     // <section Our Packages> begin ==============================
     section
     .container-lg
@@ -165,7 +159,8 @@ html
                 a(href='registerpro.html')
                     button.btn.btn-lg.btn-outline-success.rounded-pill(type='button') Choose plan 
     // <section Our Packages> close ============================
-
+    .img-center 
+        img(src='pug/carparking.png') 
 
     // ====================footer===============================
     footer.page-footer
@@ -181,10 +176,10 @@ html
                             .row
                                 .col-lg-4.col-sm-4
                                     fieldset
-                                        input.website(type='web', name='web', placeholder='Your question is', autocomplete='on', required='')
+                                        input.website(type='web', name='web', placeholder='Your question is', autocomplete='on')
                                 .col-lg-4.col-sm-4
                                     fieldset
-                                        input.email(type='address', name='address', placeholder='Email Address...', autocomplete='on', required='')
+                                        input.email(type='address', name='address', placeholder='Email Address...', autocomplete='on')
                                 .col-lg-4.col-sm-4
                                     fieldset
                                         button.main-button(type='submit', style='background-color: rgb(252, 176, 77);') Ask  Now
