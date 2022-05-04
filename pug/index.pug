@@ -167,24 +167,25 @@ html
     // <section Our Packages> close ============================
 
 
+    // ====================footer===============================
     footer.page-footer
         #free-quote.free-quote
             .container
-            .row
-                .col-lg-4.offset-lg-4
-                .section-heading
-                    h6 You Need Help  ? 
-                    h3(style='color: rgb(255, 255, 255);') Get In Touch With Us Now
-                    .line-dec
-                    .col-lg-8.offset-lg-2
+                .row
+                    .col-lg-4.offset-lg-4
+                        .section-heading.wow.fadeIn(data-wow-duration='1s', data-wow-delay='0.3s')
+                            h6 You Need Help  ? 
+                            h3(style='color: rgb(255, 255, 255);') Get In Touch With Us Now
+                    .col-lg-8.offset-lg-2.wow.fadeIn(data-wow-duration='1s', data-wow-delay='0.8s')
                         form#search(action='#', method='GET')
                             .row
-                                .col-lg-4.col-sm-2
+                                .col-lg-4.col-sm-4
                                     fieldset
-                                    input.website(type='web', name='web', placeholder='Your question is', autocomplete='on', required='')
-                                .col-lg-4.col-sm-2
+                                        input.website(type='web', name='web', placeholder='Your question is', autocomplete='on', required='')
+                                .col-lg-4.col-sm-4
                                     fieldset
-                                    input.email(type='address', name='address', placeholder='Email Address...', autocomplete='on', required='')
-                                .col-lg-4.col-sm-2
+                                        input.email(type='address', name='address', placeholder='Email Address...', autocomplete='on', required='')
+                                .col-lg-4.col-sm-4
                                     fieldset
-                                    button.main-button(type='submit', style='background-color: rgb(252, 176, 77);') Ask  Now
+                                        button.main-button(type='submit', style='background-color: rgb(252, 176, 77);') Ask  Now
+        // ====================footer========================
