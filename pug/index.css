@@ -1,3 +1,13 @@
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+.card-body{
+  border-radius: 80px;
+  background-color: cornsilk;
+}
 .page-footer{
     padding: 60px 15px 0;
     background-color: rgb(255, 255, 255);
@@ -96,8 +106,14 @@
     right: 0;
   }
   h3,h1{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 254, 254);
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  }
+  h1.text-center{
+    color: #4da6e7;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
   }
   .main-button{
     border-radius: 60px; 
@@ -125,3 +141,5 @@
     margin-right:10px;
     min-width:50px;
   }
+
+  
