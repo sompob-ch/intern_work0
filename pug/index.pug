@@ -36,32 +36,32 @@ html
             h4.display-3.text-1000.fw-normal(style='font-size: 35px;') Park before arriving !
             h1.display-3.text-primary.fw-bold Discover nice spaces
             .pt-5
-            nav
-                #nav-tab.nav.nav-tabs.voyage-tabs(role='tablist')
-                button#nav-day-tab.nav-link.active(data-bs-toggle='tab', data-bs-target='#nav-day', type='button', role='tab', aria-controls='nav-home', aria-selected='true')
-                    | Daily
-                    i.fas.fa-map-marker-alt
+                nav
+                    #nav-tab.nav.nav-tabs.voyage-tabs(role='tablist')
+                        button#nav-day-tab.nav-link.active(data-bs-toggle='tab', data-bs-target='#nav-day', type='button', role='tab', aria-controls='nav-home', aria-selected='true')
+                            | Daily
+                            i.fas.fa-map-marker-alt
                 
                 // Day
                 #nav-tabContent.tab-content
-                #nav-day.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-day-tab')
-                    form.row.g-4.mt-5
-                    .col-sm-6.col-md-6.col-xl-5
-                        .input-group-icon
-                        label.form-label(for='form3Example3cg') arrival day 
-                    .col-sm-6.col-md-6.col-xl-5
-                        .input-group-icon
-                        label.form-label(for='form3Example3cg') arrival time
-                    .col-sm-6.col-md-6.col-xl-5
-                        .input-group-icon
-                        input#inputdateOne.form-control.input-box.form-voyage-control(type='date')
-                        span.nav-link-icon.text-800.fs--1.input-box-icon
-                            i.fas.fa-calendar
-                    .col-sm-6.col-md-6.col-xl-5
-                        .input-group-icon
-                        input.form-control.input-box.form-voyage-control(placeholder='Enter Your arrival time')
-                        span.nav-link-icon.text-800.fs--1.input-box-icon
-                            i.fas.fa-calendar
+                    #nav-day.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-day-tab')
+                        form.row.g-4.mt-5
+                            .col-sm-6.col-md-6.col-xl-5
+                                .input-group-icon
+                                label.form-label(for='form3Example3cg') arrival day 
+                            .col-sm-6.col-md-6.col-xl-5
+                                .input-group-icon
+                                label.form-label(for='form3Example3cg') arrival time
+                            .col-sm-6.col-md-6.col-xl-5
+                                .input-group-icon
+                                input#inputdateOne.form-control.input-box.form-voyage-control(type='date')
+                                span.nav-link-icon.text-800.fs--1.input-box-icon
+                                    i.fas.fa-calendar
+                            .col-sm-6.col-md-6.col-xl-5
+                                .input-group-icon
+                                input.form-control.input-box.form-voyage-control(placeholder='Enter Your arrival time')
+                                span.nav-link-icon.text-800.fs--1.input-box-icon
+                                    i.fas.fa-calendar
                 // Day
                 .my-5.text-center(style='margin-left: 470px;')
                     a(href='bookpark.html')
@@ -176,15 +176,15 @@ html
                     h6 You Need Help  ? 
                     h3(style='color: rgb(255, 255, 255);') Get In Touch With Us Now
                     .line-dec
-                .col-lg-8.offset-lg-2
-                form#search(action='#', method='GET')
-                    .row
-                    .col-lg-4.col-sm-2
-                        fieldset
-                        input.website(type='web', name='web', placeholder='Your question is', autocomplete='on', required='')
-                    .col-lg-4.col-sm-2
-                        fieldset
-                        input.email(type='address', name='address', placeholder='Email Address...', autocomplete='on', required='')
-                    .col-lg-4.col-sm-2
-                        fieldset
-                        button.main-button(type='submit', style='background-color: rgb(252, 176, 77);') Ask  Now
+                    .col-lg-8.offset-lg-2
+                        form#search(action='#', method='GET')
+                            .row
+                                .col-lg-4.col-sm-2
+                                    fieldset
+                                    input.website(type='web', name='web', placeholder='Your question is', autocomplete='on', required='')
+                                .col-lg-4.col-sm-2
+                                    fieldset
+                                    input.email(type='address', name='address', placeholder='Email Address...', autocomplete='on', required='')
+                                .col-lg-4.col-sm-2
+                                    fieldset
+                                    button.main-button(type='submit', style='background-color: rgb(252, 176, 77);') Ask  Now
