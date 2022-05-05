@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pug-compile": "pug -w pug/index.pug -o html",
+    "pug-compile": "pug -w app/pug/index.pug -o html",
     "sass-compile": "sass --watch app/sass/main.sass app/css/template.css",
     "start-server": "http-server ."
   },
