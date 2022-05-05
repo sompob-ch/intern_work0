@@ -26,7 +26,7 @@ html
         // ==================landing page===================
     section.mt-10.py-0
         .bg-holder.w-50.bg-right.d-none.d-lg-block(style='margin: top 50px;')
-            img.img(style='width: 750px; height: 650px;', src='../pug/carparking.png', alt='img')
+            img.img(style='width: 750px; height: 650px;', src='../img/carparking.png', alt='img')
 
         .container
             .row
@@ -94,73 +94,98 @@ html
         h5.text-primary.text-center.mt-3 And park!
         p.text-center.mx-xl-7
           | Upon arrival, just show your reservation in the car park. There is no need to print anything out!
-        
-    // <section Our Packages> begin ==============================
-    section
-    .container-lg
-        .row.justify-content-center
-        .col-12
-            br
-            h1.text-center.lh-sm.fs-lg-6.fs-xxl-7 Our Packages
-            br
+    // ====================How It happens===============================
+    section#packages.bg-100.py-7
+        .container-lg
+            .row.justify-content-center
+                .col-12
+                    h1.text-center.lh-sm.fs-lg-6.fs-xxl-7 Our Packages
         .row.h-100.justify-content-center
-        .col-md-4.pt-6.px-sm-7.px-md-2.px-lg-3
-            .card.overflow-hidden(style='border: 0px solid rgba(0, 0, 0, 0.125 ); border-radius: 80px;')
-            // /.bg-holder
-            .card-body(style='background-color: cornsilk;')
-                .ms-4
-                h5.my-4.text-800 Basic
-                h1.fs-7.text.text-warning $9
-                h6.fs--1.mb-6.text-warning / per day
-                ul.list-unstyled
-                    li.mb-3.text-900
-                    i.fas.fa-check-circle.text-700.me-2
-                    | Parking only 24 hours
-                    li.mb-3.text-900
-                    i.fas.fa-check-circle.text-700.me-2
-                    | Find parking anywhere
-                    li.mb-3.text-900
-                    i.fas.fa-check-circle.text-700.me-2
-                    | Compare prices
-                    li.mb-3.text-900
-                    i.fas.fa-check-circle.text-700.me-2
-                    | Pay once per booking
-                    li.mb-3.text-900
-                    i.fas.fa-check-circle.text-700.me-2
-                    | Once booked, it cannot be cancelled.
-                // ปุ่ม
-                .my-5.text-center
-                a(href='home.html')
-                    button.btn.btn-lg.btn-warning.hover-top.btn-glow.rounded-pill.border-0(type='button') Choose plan
-        .col-md-4.pt-6.px-sm-7.px-md-2.px-lg-3
-            .card.overflow-hidden(style='border: 0px solid rgba(0, 0, 0, 0.125 ); border-radius: 80px;')
-            .card-body.z-index-2(style='background-color: #c0f1d8;')
-                .ms-4
-                h5.my-4.text-800 Professional
-                h1.fs-7.text.text-success $129
-                h6.fs--1.mb-6.text-success / per month
-                ul.list-unstyled
-                    li.mb-3.text-900
-                    i.fas.fa-check-circle.text-700.me-2
-                    | Parking more than 24 hours
-                    li.mb-3.text-900
-                    i.fas.fa-check-circle.text-700.me-2
-                    | You Can park up to 1 month per pay
-                    li.mb-3.text-900
-                    i.fas.fa-check-circle.text-700.me-2
-                    | No compare prices
-                    li.mb-3.text-900
-                    i.fas.fa-check-circle.text-700.me-2
-                    | Pay once and reserve 25 times.
-                    li.mb-3.text-900
-                    i.fas.fa-check-circle.text-700.me-2
-                    | Once booked, it cannot be cancelled.
-                // ปุ่ม
-                .my-5.text-center
-                a(href='registerpro.html')
-                    button.btn.btn-lg.btn-outline-success.rounded-pill(type='button') Choose plan 
-    // <section Our Packages> close ============================
+            .col-md-4.pt-6.px-sm-7.px-md-2.px-lg-3
+                .card.h-100.rounded-3.bg-soft-primary
+                    .bg-holder.rounded-3(style='background-image:url(assets/img/gallery/pricing-primary.png);background-position:top right;background-size:auto;')
+                    .card-body.z-index-2
+                        .ms-4
+                            h5.my-4.text-800 Basic
+                            h1.fs-7.text.text-primary $9
+                            h6.fs--1.mb-6.text-primary / per day
+                            ul.list-unstyled
+                                li.mb-3.text-900
+                                i.fas.fa-check-circle.text-700.me-2
+                                | Find parking anywhere
+                                li.mb-3.text-900
+                                i.fas.fa-check-circle.text-700.me-2
+                                | Single Revision
+                                li.mb-3.text-900
+                                i.fas.fa-check-circle.text-700.me-2
+                                | 10 Products per order
+                                li.mb-3.text-900
+                                i.fas.fa-check-circle.text-700.me-2
+                                | Not providing softcopy
+                                li.mb-3.text-900
+                                i.fas.fa-check-circle.text-700.me-2
+                                | Free return shipment
+                        .my-5.text-center
+                            button.btn.btn-lg.btn-outline-primary.rounded-pill(type='button') Choose plan
+            .col-md-4.pt-6.px-sm-7.px-md-2.px-lg-3
+                .card.h-100.rounded-3.bg-soft-warning
+                    .bg-holder.rounded-3(style='background-image:url(assets/img/gallery/pricing-warning.png);background-position:top right;background-size:auto;')                
+                    .card-body.z-index-2
+                        .ms-4
+                            h5.my-4.text-800 Avarage
+                            h1.fs-7.text.text-warning $29
+                            h6.fs--1.mb-6.text-warning / per image
+                            ul.list-unstyled
+                                li.mb-3.text-900
+                                i.fas.fa-check-circle.text-700.me-2
+                                | High quality images
+                                li.mb-3.text-900
+                                i.fas.fa-check-circle.text-700.me-2
+                                | 5 Revisions
+                                li.mb-3.text-900
+                                i.fas.fa-check-circle.text-700.me-2
+                                | 25 Products per order
+                                li.mb-3.text-900
+                                i.fas.fa-check-circle.text-700.me-2
+                                | Provides softcopy &amp; PSD
+                                li.mb-3.text-900
+                                i.fas.fa-check-circle.text-700.me-2
+                                | Free return shipment
+                        .my-5.text-center
+                            button.btn.btn-lg.btn-warning.hover-top.btn-glow.rounded-pill.border-0(type='button') Choose plan
+            .col-md-4.pt-6.px-sm-7.px-md-2.px-lg-3
+                .card.h-100.rounded-3.bg-soft-success
+                    .bg-holder.rounded-3(style='background-image:url(assets/img/gallery/pricing-success.png);background-position:top right;background-size:auto;')
+               
+                    .card-body.z-index-2
+                        .ms-4
+                        h5.my-4.text-800 Professional
+                        h1.fs-7.text.text-success $19
+                        h6.fs--1.mb-6.text-success / per image
+                        ul.list-unstyled
+                            li.mb-3.text-900
+                            i.fas.fa-check-circle.text-700.me-2
+                            | High quality images
+                            li.mb-3.text-900
+                            i.fas.fa-check-circle.text-700.me-2
+                            | 3 Revisions
+                            li.mb-3.text-900
+                            i.fas.fa-check-circle.text-700.me-2
+                            | 50 Products per order
+                            li.mb-3.text-900
+                            i.fas.fa-check-circle.text-700.me-2
+                            | Provides softcopy
+                            li.mb-3.text-900
+                            i.fas.fa-check-circle.text-700.me-2
+                            | Free return shipment
+                        .my-5.text-center
+                            a(href='registerpro.html')
+                            button.btn.btn-lg.btn-outline-success.rounded-pill(type='button') Choose plan 
+    // end of .container
 
+    
+
+  
     // ====================footer===============================
     footer.page-footer
         #free-quote.free-quote
@@ -183,3 +208,64 @@ html
                                     fieldset
                                         button.main-button(type='submit', style='background-color: rgb(252, 176, 77);') Ask  Now
         // ====================footer========================
+
+    section
+        .container-lg
+            .row.justify-content-center
+                .col-12
+                    br
+                    h1.text-center.lh-sm.fs-lg-6.fs-xxl-7 Our Packages
+                    br
+            .row.h-100.justify-content-center
+                .col-md-4.pt-6.px-sm-7.px-md-2.px-lg-3
+                    .card.overflow-hidden(style='border: 0px solid rgba(0, 0, 0, 0.125 ); border-radius: 80px;')
+                        .card-body(style='border-radius: 60px; background-color: cornsilk;')
+                            .ms-4
+                                h5.my-4.text-800 Basic
+                                h1.fs-7.text.text-warning $9
+                                h6.fs--1.mb-6.text-warning / per day
+                                ul.list-unstyled
+                                    li.mb-3.text-900
+                                    i.fas.fa-check-circle.text-700.me-2
+                                    | Parking only 24 hours
+                                    li.mb-3.text-900
+                                    i.fas.fa-check-circle.text-700.me-2
+                                    | Find parking anywhere
+                                    li.mb-3.text-900
+                                    i.fas.fa-check-circle.text-700.me-2
+                                    | Compare prices
+                                    li.mb-3.text-900
+                                    i.fas.fa-check-circle.text-700.me-2
+                                    | Pay once per booking
+                                    li.mb-3.text-900
+                                    i.fas.fa-check-circle.text-700.me-2
+                                    | Once booked, it cannot be cancelled.
+                            .my-5.text-center
+                                a(href='home.html')
+                                    button.btn.btn-lg.btn-warning.hover-top.btn-glow.rounded-pill.border-0(type='button') Choose plan
+                .col-md-4.pt-6.px-sm-7.px-md-2.px-lg-3
+                    .card.overflow-hidden(style='border: 0px solid rgba(0, 0, 0, 0.125 ); border-radius: 80px;')
+                        .card-body(style='background-color: #c0f1d8;')
+                            .ms-4
+                                h5.my-4.text-800 Professional
+                                h1.fs-7.text.text-success $129
+                                h6.fs--1.mb-6.text-success / per month
+                                ul.list-unstyled
+                                    li.mb-3.text-900
+                                    i.fas.fa-check-circle.text-700.me-2
+                                    | Parking more than 24 hours
+                                    li.mb-3.text-900
+                                    i.fas.fa-check-circle.text-700.me-2
+                                    | You Can park up to 1 month per pay
+                                    li.mb-3.text-900
+                                    i.fas.fa-check-circle.text-700.me-2
+                                    | No compare prices
+                                    li.mb-3.text-900
+                                    i.fas.fa-check-circle.text-700.me-2
+                                    | Pay once and reserve 25 times.
+                                    li.mb-3.text-900
+                                    i.fas.fa-check-circle.text-700.me-2
+                                    | Once booked, it cannot be cancelled.
+                            .my-5.text-center
+                                a(href='home.html')
+                                    button.btn.btn-lg.btn-outline-success.rounded-pill(type='button') Choose plan
