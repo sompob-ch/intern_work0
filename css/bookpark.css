@@ -1,28 +1,28 @@
-#box-A{
+.box-A.cover{
     background-color: #1597E5; 
     min-height:230px;
     
 }
-#box-B{
+.box-B.cover{
     background-color: #198754; 
     min-height:230px;
     
-
+    
 }
-#box-C{
+.box-C.cover{
     background-color: #F4A442; 
     min-height:230px;
 
 }
-#botton-A{
+.box-A.botton{
     background-color: #FF6B6B; 
     border-radius: 50px; width: 100px;
 }
-#botton-B{
+.box-B.botton{
     background-color: #233E8B; 
     border-radius: 50px; width: 100px;
 }
-#botton-C{
+.box-C.botton{
     background-color: #3E7C17; 
     border-radius: 50px; width: 100px;
 
@@ -118,7 +118,7 @@
     left: auto;
     right: 0;
   }
-  
+
   .bg-holder.overlay:before {
     position: absolute;
     content: "";
