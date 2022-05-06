@@ -17,17 +17,17 @@ html
                 form
                 a.btn.text-800.order-1.order-lg-0.me-2(href='home.html')
                     i.bi-house-door
-                    | Ann
+                    | Home
                 a.btn.btn-voyage-outline.order-0.text-primary(href='login.html')
                     i.bi-person
                     |  Logout       
         // ==================nav bar===================
-
+    
     section#flights.py-0
       .container
         .row.h-100
           .col-lg-7.mx-auto.text-center.mb-6
-            h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3(style='margin-top: 100px;') booking
+            h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3(style='margin-top: 100px;') Pick the place that’s best for you
         .row.g-1.flex-center(style='margin-top: 50px;')
             //A01
             .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
@@ -215,24 +215,25 @@ html
     </section>
     
         // ====================footer-Begin=============================
-    footer.page-footer
-        #free-quote.free-quote
-            .container
-                .row
-                    .col-lg-4.offset-lg-4
-                        .section-heading.wow.fadeIn
-                            h6 You Need Help  ? 
-                            h3.text-light Get In Touch With Us Now
-                    .col-lg-8.offset-lg-2.wow.fadeIn
-                        form#search(action='#', method='GET')
-                            .row
-                                .col-lg-4.col-sm-4
-                                    fieldset
-                                        input.website(type='web', name='web', placeholder='Your question is', autocomplete='on', required='')
-                                .col-lg-4.col-sm-4
-                                    fieldset
-                                        input.email(type='address', name='address', placeholder='Email Address...', autocomplete='on', required='')
-                                .col-lg-4.col-sm-4
-                                    fieldset
-                                        button.main-button.text-dark.fw-bolder(type='submit', style='background-color: rgb(252, 176, 77);') Ask  Now
+    .container
+        footer.page-footer
+            #free-quote.free-quote
+                .container
+                    .row
+                        .col-lg-4.offset-lg-4
+                            .section-heading.wow.fadeIn
+                                h6 You Need Help  ? 
+                                h3.text-light Get In Touch With Us Now
+                        .col-lg-8.offset-lg-2.wow.fadeIn
+                            form#search(action='#', method='GET')
+                                .row
+                                    .col-lg-4.col-sm-4
+                                        fieldset
+                                            input.website(type='web', name='web', placeholder='Your question is', autocomplete='on', required='')
+                                    .col-lg-4.col-sm-4
+                                        fieldset
+                                            input.email(type='address', name='address', placeholder='Email Address...', autocomplete='on', required='')
+                                    .col-lg-4.col-sm-4
+                                        fieldset
+                                            button.main-button.text-dark.fw-bolder(type='submit', style='background-color: rgb(252, 176, 77);') Ask  Now
         // ====================footer-End=================================
