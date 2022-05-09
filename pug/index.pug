@@ -21,18 +21,13 @@ html
                 a.btn.btn-voyage-outline.order-0.text-primary(href='login.html')
                     i.bi-person
                     |  Logout       
-        // ==================nav bar===================
 
-        // ==================landing page-Begin===================
-  section.mt-10.py-0
+  section.mt-10.py-0#landing-page
   .bg-holder.w-50.bg-right.d-none.d-lg-block(style='margin: top 50px;')
-    img.img(style='width: 750px; height: 650px;', src='../img/carparking.png', alt='img')
+    img.img(style='width: 750px; height: 550px;', src='../img/car-parking.png', alt='img')
   .container
     .row
       .col-lg-6.py-5.py-xl-5.py-xxl-7
-        br
-        br
-        br
         h4.display-3.text-1000.fw-normal(style='font-size: 35px;') Park before arriving !
         h1.display-3.text-primary.fw-bold Discover nice spaces
         .pt-5
@@ -55,17 +50,14 @@ html
               .my-5.text-center(style='margin-left: 470px;')
                 a(href='../html/bookpark.html')
                   button.btn.btn-lg.btn-warning.hover-top.btn-glow.rounded-pill.border-0(type='button') Find parking
-              // ปุ่ม submit ไปหน้า bookpark
-        // ===================landingpage=============================                                                                     
-  section#howitworks.py-0
+              
+                                                                         
+  section#howitworks
   .container
     .row
       .col-12
-        br 
         p.text-center How It happens 
         h1.text-center.lh-sm.fs-lg-6.fs-xxl-7  Discover amazing spaces
-        br
-        br
     .row.mt-6
       .col-12.col-md-4.d-flex.flex-column.align-items-center
         .badge.badge-circle.bg-soft-primary.flex-center
@@ -83,20 +75,16 @@ html
         h5.text-primary.text-center.mt-3 And park!
         p.text-center.mx-xl-7
           | Upon arrival, just show your reservation in the car park. There is no need to print anything out!
-        // ====================How It happens End===============================
 
-        // ===================Our Packages Begin===============================
     section
         .container-lg
             .row.justify-content-center
-                .col-12
-                    br
-                    h1.text-center.lh-sm.fs-lg-6.fs-xxl-7 Our Packages
-                    br
+                .col-12                  
+                    h1.text-center.lh-sm.fs-lg-6.fs-xxl-7#text-packages Our Packages
             .row.h-100.justify-content-center
                 .col-md-4.pt-6.px-sm-7.px-md-2.px-lg-3
-                        .card.overflow-hidden(style='border: 0px solid rgba(0, 0, 0, 0.125 ); border-radius: 80px;')
-                            .card-body(style='background-color: #C8DEFE;')
+                        .card.overflow-hidden
+                            .card-body#p1
                                 .ms-4
                                     h5.my-4.text-800 Basic
                                     h1.fs-7.text.text-primary $9
@@ -116,14 +104,14 @@ html
                                         | Not providing softcopy
                                         li.mb-3.text-900
                                         i.fas.fa-check-circle.text-700.me-2
-                                        | Free return shipment
+                                        | Once booked, it cannot be cancelled.
                                 .my-5.text-center
                                     a(href='home.html')
                                         button.btn.btn-lg.btn-outline-primary.rounded-pill(type='button') Choose plan
 
                 .col-md-4.pt-6.px-sm-7.px-md-2.px-lg-3
-                    .card.overflow-hidden(style='border: 0px solid rgba(0, 0, 0, 0.125 ); border-radius: 80px;')
-                        .card-body(style='border-radius: 60px; background-color: cornsilk;')
+                    .card.overflow-hidden
+                        .card-body#p2
                             .ms-4
                                 h5.my-4.text-800 Avarage
                                 h1.fs-7.text.text-warning $29
@@ -148,8 +136,8 @@ html
                                 a(href='home.html')
                                     button.btn.btn-lg.btn-warning.hover-top.btn-glow.rounded-pill.border-0(type='button') Choose plan
                 .col-md-4.pt-6.px-sm-7.px-md-2.px-lg-3
-                    .card.overflow-hidden(style='border: 0px solid rgba(0, 0, 0, 0.125 ); border-radius: 80px;')
-                        .card-body(style='background-color: #c0f1d8;')
+                    .card.overflow-hidden
+                        .card-body#p3
                             .ms-4
                                 h5.my-4.text-800 Professional
                                 h1.fs-7.text.text-success $129
@@ -160,13 +148,13 @@ html
                                     | Parking more than 24 hours
                                     li.mb-3.text-900
                                     i.fas.fa-check-circle.text-700.me-2
-                                    | You Can park up to 1 month per pay
+                                    | You Can park up to 1 month
                                     li.mb-3.text-900
                                     i.fas.fa-check-circle.text-700.me-2
                                     | No compare prices
                                     li.mb-3.text-900
                                     i.fas.fa-check-circle.text-700.me-2
-                                    | Pay once and reserve 25 times.
+                                    | Pay once 
                                     li.mb-3.text-900
                                     i.fas.fa-check-circle.text-700.me-2
                                     | Once booked, it cannot be cancelled.
@@ -174,10 +162,7 @@ html
                                 a(href='home.html')
                                     button.btn.btn-lg.btn-outline-success.rounded-pill(type='button') Choose plan    
     
-        // ===================Our Packages-End==========================
 
-    
-        // ====================footer-Begin=============================
     footer.page-footer
         #free-quote.free-quote
             .container
@@ -198,4 +183,3 @@ html
                                 .col-lg-4.col-sm-4
                                     fieldset
                                         button.main-button.text-dark.fw-bolder(type='submit', style='background-color: rgb(252, 176, 77);') Ask  Now
-        // ====================footer-End=================================
