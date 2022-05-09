@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pug-compile": "pug -w ./pug -o html",
-    "sass-compile": "sass --watch sass/components/main.sass css/main.css",
+    "sass-compile": "sass --watch sass/main.sass css/main.css",
     "start-server": "http-server ."
   },
   "author": "",
