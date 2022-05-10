@@ -23,34 +23,32 @@ html
                     |  Logout       
 
   section.mt-10.py-0#landing-page
-  .bg-holder.w-50.bg-right.d-none.d-lg-block(style='margin: top 50px;')
-    img.img(style='width: 750px; height: 550px;', src='../img/car-parking.png', alt='img')
   .container
-    .row
-      .col-lg-6.py-5.py-xl-5.py-xxl-7
-        h4.display-3.text-1000.fw-normal(style='font-size: 35px;') Park before arriving !
-        h1.display-3.text-primary.fw-bold Discover nice spaces
-        .pt-5
-          nav  
-            #nav-tabContent.tab-content
-              #nav-day.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-day-tab')
+    .g-3.mb-3.row
+      .col-lg-6
+        .row
+          .col-lg-6.py-5.py-xl-5.py-xxl-7
+            h4.display-3.fw-normal(style='font-size: 28px;') Park before arriving !
+            h1.display-3.text-primary.fw-bold(style='font-size: 37px;') Discover nice spaces
+          .pt-5
+            nav  
+              #nav-tabContent.tab-content
                 form.row.g-4.mt-5
+                  .col-sm-6.col-md-6.col-xl-5                      
+                    label.form-label.text-warning.fw-bolder(for='form3Example3cg') arrival day 
                   .col-sm-6.col-md-6.col-xl-5
-                    .input-group-icon
-                      label.form-label.text-warning.fw-bolder(for='form3Example3cg') arrival day 
+                    label.form-label.text-success.fw-bolder(for='form3Example3cg') arrival time
+                  .col-sm-6.col-md-6.col-xl-5                     
+                    input#inputdateOne.form-control.input-box.form-voyage-control(type='date')                   
                   .col-sm-6.col-md-6.col-xl-5
-                    .input-group-icon
-                      label.form-label.text-success.fw-bolder(for='form3Example3cg') arrival time
-                  .col-sm-6.col-md-6.col-xl-5
-                    .input-group-icon
-                      input#inputdateOne.form-control.input-box.form-voyage-control(type='date')                   
-                  .col-sm-6.col-md-6.col-xl-5
-                    .input-group-icon
-                      input.form-control.input-box.form-voyage-control(placeholder='Enter Your arrival time')    
-              .my-5.text-center(style='margin-left: 470px;')
+                    input.form-control.input-box.form-voyage-control(placeholder='Enter Your arrival time')    
+              .my-5.text-center(style='margin-left: 450px;')
                 a(href='../html/bookpark.html')
                   button.btn.btn-lg.btn-warning.hover-top.btn-glow.rounded-pill.border-0(type='button') Find parking
-              
+                
+      .col-lg-6
+            img.car-img(src='../img/car-parking.png', alt='img')
+        
                                                                          
   section#howitworks
   .container
@@ -162,7 +160,6 @@ html
                                 a(href='home.html')
                                     button.btn.btn-lg.btn-outline-success.rounded-pill(type='button') Choose plan    
     
-
     footer.page-footer
         #free-quote.free-quote
             .container
