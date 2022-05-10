@@ -1,4 +1,3 @@
-
 doctype html
 html
   head
@@ -19,13 +18,13 @@ html
                                     h2.text-center.mb-5 Log in
                                     form
                                         .form-outline.mb-4
-                                            input#form3Example3cg.form-control.form-control-lg(type='email')
-                                            label.form-label(for='form3Example3cg') Enter Your Name
+                                            input.form-control.form-control-lg(type='email', name='address', placeholder='enter your email address', autocomplete='on', required='')
+                                            label.form-label(for='form3Example3cg') Enter Your Email
                                         .form-outline.mb-4
-                                            input#form3Example4cg.form-control.form-control-lg(type='password')
+                                            input.form-control.form-control-lg(type='password')
                                             label.form-label(for='form3Example4cg') Enter Your Password                                                        
                                         .d-flex.justify-content-center
-                                            a.btn.btn-success.btn-block.btn-lg.gradient-custom-4.rounded-pill.border-0#button-login(href='index.html', tabindex='-1', role='button', aria-disabled='true') login
+                                            a.btn.btn-success.btn-block.btn-lg.gradient-custom-4.rounded-pill.border-0.button-login(href='index.html', tabindex='-1', role='button', aria-disabled='true') login
                                         .col-6
                                             p.small.mb-0
                                                 | Don&apos;t have account? 

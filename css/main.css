@@ -98,6 +98,10 @@
   color: #fff;
 }
 
+.main-button.text-dark.fw-bolder.ask-now {
+  background-color: rgb(252, 176, 77);
+}
+
 .col-6 {
   margin-top: 20px;
 }
@@ -116,7 +120,7 @@ body.login {
   margin-bottom: 50px;
 }
 
-#landing-page {
+.mt-10.py-0.landing-page {
   margin-top: 50px;
 }
 
@@ -125,11 +129,6 @@ body.login {
   height: 550px;
 }
 
-@media (max-width: 768px) {
-  .car-img {
-    height: 350px;
-  }
-}
 .card.overflow-hidden {
   border: 0px solid rgba(0, 0, 0, 0.125);
   border-radius: 80px;

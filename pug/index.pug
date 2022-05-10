@@ -19,33 +19,34 @@ html
                       | Home
                   a.btn.btn-voyage-outline.order-0.text-primary(href='login.html')
                       i.bi-person
-                      |  Logout       
+                      | Logout       
 
-    section.mt-10.py-0#landing-page
-    .container
-      .g-3.mb-3.row
-        .col-lg-6
-          .row
-            .col-lg-6.py-5.py-xl-5.py-xxl-7
-              h4.display-3.fw-normal(style='font-size: 28px;') Park before arriving !
-              h1.display-3.text-primary.fw-bold(style='font-size: 37px;') Discover nice spaces
-            .pt-5
-              nav  
-                #nav-tabContent.tab-content
-                  form.row.g-4.mt-5
-                    .col-sm-6.col-md-6.col-xl-5                      
-                      label.form-label.text-warning.fw-bolder(for='form3Example3cg') arrival day 
-                    .col-sm-6.col-md-6.col-xl-5
-                      label.form-label.text-success.fw-bolder(for='form3Example3cg') arrival time
-                    .col-sm-6.col-md-6.col-xl-5                     
-                      input#inputdateOne.form-control.input-box.form-voyage-control(type='date')                   
-                    .col-sm-6.col-md-6.col-xl-5
-                      input.form-control.input-box.form-voyage-control(placeholder='Enter Your arrival time')    
-                .my-5.text-center(style='margin-left: 450px;')
-                  a(href='../html/bookpark.html')
-                    button.btn.btn-lg.btn-warning.hover-top.btn-glow.rounded-pill.border-0(type='button') Find parking               
-        .col-lg-6
-              img.car-img(src='../img/car-parking.png', alt='img')
+    section
+    .mt-10.py-0.landing-page
+      .container
+        .g-3.mb-3.row
+          .col-lg-6 
+            .row
+              .col-lg-6.py-5.py-xl-5.py-xxl-7
+                h4.display-3.fw-normal(style='font-size: 28px;') Park before arriving !
+                h1.display-3.text-primary.fw-bold(style='font-size: 37px;') Discover nice spaces
+              .pt-5
+                nav  
+                  #nav-tabContent.tab-content
+                    form.row.g-4.mt-5
+                      .col-sm-6.col-md-6.col-xl-5                      
+                        label.form-label.text-warning.fw-bolder(for='form3Example3cg') arrival day 
+                      .col-sm-6.col-md-6.col-xl-5
+                        label.form-label.text-success.fw-bolder(for='form3Example3cg') arrival time
+                      .col-sm-6.col-md-6.col-xl-5                     
+                        input.input-dateOne.form-control.input-box.form-voyage-control(type='date')                   
+                      .col-sm-6.col-md-6.col-xl-5
+                        input.form-control.input-box.form-voyage-control(placeholder='Enter Your arrival time')    
+                  .my-5.text-center(style='margin-left: 450px;')
+                    a(href='../html/bookpark.html')
+                      button.btn.btn-lg.btn-warning.hover-top.btn-glow.rounded-pill.border-0(type='button') Find parking               
+          .col-lg-6
+                img.car-img(src='../img/car-parking.png', alt='img')
                                                                           
     section
     .container
@@ -173,7 +174,7 @@ html
                                           input.website(type='web', name='web', placeholder='Your question is', autocomplete='on', required='')
                                   .col-lg-4.col-sm-4
                                       fieldset
-                                          input.email(type='address', name='address', placeholder='Email Address...', autocomplete='on', required='')
+                                          input.email(type='email', name='address', placeholder='Email Address...', autocomplete='on', required='')
                                   .col-lg-4.col-sm-4
                                       fieldset
-                                          button.main-button.text-dark.fw-bolder(type='submit', style='background-color: rgb(252, 176, 77);') Ask  Now
+                                          button.main-button.text-dark.fw-bolder.ask-now(type='submit') Ask  Now
