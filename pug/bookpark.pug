@@ -1,234 +1,233 @@
 doctype html
 html
-  head  
-  style
-    include  ../css/bootstrap.css
-    include  ../css/main.css 
-  body
-    main#top.main
-    nav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3.d-block(data-navbar-on-scroll='data-navbar-on-scroll', style='background-color: rgb(255, 255, 255);')
+    include includes/main.pug
+    head
+        title booking 
+    body
+        main#top.main
+        nav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3.d-block(data-navbar-on-scroll='data-navbar-on-scroll', style='background-color: rgb(255, 255, 255);')
+            .container
+                a.navbar-brand(href='./index.html')
+                    span.fw-bold.text-primary.ms-2 Let's park
+                button.navbar-toggler.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarSupportedContent.collapse.navbar-collapse.border-top.border-lg-0.mt-4.mt-lg-0
+                    ul.navbar-nav.mx-auto.pt-2.pt-lg-0.font-base
+                    form
+                    a.btn.text-800.order-1.order-lg-0.me-2(href='home.html')
+                        i.bi-house-door
+                        | Home
+                    a.btn.btn-voyage-outline.order-0.text-primary(href='login.html')
+                        i.bi-person
+                        |  Logout       
+        
+        section#flights.py-0
         .container
-            a.navbar-brand(href='./index.html')
-                span.fw-bold.text-primary.ms-2 Let's park
-            button.navbar-toggler.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-                span.navbar-toggler-icon
-            #navbarSupportedContent.collapse.navbar-collapse.border-top.border-lg-0.mt-4.mt-lg-0
-                ul.navbar-nav.mx-auto.pt-2.pt-lg-0.font-base
-                form
-                a.btn.text-800.order-1.order-lg-0.me-2(href='home.html')
-                    i.bi-house-door
-                    | Home
-                a.btn.btn-voyage-outline.order-0.text-primary(href='login.html')
-                    i.bi-person
-                    |  Logout       
-    
-    section#flights.py-0
-      .container
-        .row.h-100
-          .col-lg-7.mx-auto.text-center.mb-6
-            h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3(style='margin-top: 100px;') Pick the place that’s best for you
-        .row.g-1.flex-center(style='margin-top: 50px;')
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-A.cover
-                    h5.text-light A01
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-A.button(type='submit') Book  Now
+            .row.h-100
+            .col-lg-7.mx-auto.text-center.mb-6
+                h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3(style='margin-top: 100px;') Pick the place that’s best for you
+            .row.g-1.flex-center(style='margin-top: 50px;')
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-A.cover
+                        h5.text-light A01
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-A.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-A.cover
-                    h5.text-light A02
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-A.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-A.cover
+                        h5.text-light A02
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-A.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-A.cover
-                    h5.text-light A03
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-A.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-A.cover
+                        h5.text-light A03
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-A.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-A.cover
-                    h5.text-light A04
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-A.button(type='submit') Book  Now
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-A.cover
-                    h5.text-light A05
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-A.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-A.cover
+                        h5.text-light A04
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-A.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-A.cover
+                        h5.text-light A05
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-A.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-A.cover
-                    h5.text-light A06
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-A.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-A.cover
+                        h5.text-light A06
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-A.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-B.cover
-                    h5.text-light B01
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-B.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-B.cover
+                        h5.text-light B01
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-B.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-B.cover
-                    h5.text-light B02
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-B.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-B.cover
+                        h5.text-light B02
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-B.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-B.cover
-                    h5.text-light B03
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-B.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-B.cover
+                        h5.text-light B03
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-B.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-B.cover
-                    h5.text-light B04
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-B.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-B.cover
+                        h5.text-light B04
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-B.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-B.cover
-                    h5.text-light B05
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-B.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-B.cover
+                        h5.text-light B05
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-B.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-B.cover
-                    h5.text-light B06
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-B.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-B.cover
+                        h5.text-light B06
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-B.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-C.cover
-                    h5.text-light C01
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-C.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-C.cover
+                        h5.text-light C01
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-C.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-C.cover
-                    h5.text-light C02
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-C.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-C.cover
+                        h5.text-light C02
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-C.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-C.cover
-                    h5.text-light C03
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-C.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-C.cover
+                        h5.text-light C03
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-C.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-C.cover
-                    h5.text-light C04
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-C.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-C.cover
+                        h5.text-light C04
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-C.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-C.cover
-                    h5.text-light C05
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-C.button(type='submit') Book  Now
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-C.cover
+                        h5.text-light C05
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-C.button(type='submit') Book  Now
 
-            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                .d-flex.flex-column.justify-content-center.px-3.box-C.cover
-                    h5.text-light C06
-                    h6.text-light.fw-normal.fs-0 $9
-                    i.fas.fa-arrow-right.text-light.mt-4
-                    br
-                    br
-                    a(href='checkout.html')
-                    button.main-button.text-light.box-C.button(type='submit') Book  Now
-           
+                .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                    .d-flex.flex-column.justify-content-center.px-3.box-C.cover
+                        h5.text-light C06
+                        h6.text-light.fw-normal.fs-0 $9
+                        i.fas.fa-arrow-right.text-light.mt-4
+                        br
+                        br
+                        a(href='checkout.html')
+                        button.main-button.text-light.box-C.button(type='submit') Book  Now
+            
+                </div>
             </div>
-        </div>
-    </section>
-    
-    .container
-        footer.page-footer
-            #free-quote.free-quote
-                .container
-                    .row
-                        .col-lg-4.offset-lg-4
-                            .section-heading.wow.fadeIn
-                                h6 You Need Help  ? 
-                                h3.text-light Get In Touch With Us Now
-                        .col-lg-8.offset-lg-2.wow.fadeIn
-                            form#search(action='#', method='GET')
-                                .row
-                                    .col-lg-4.col-sm-4
-                                        fieldset
-                                            input.website(type='web', name='web', placeholder='Your question is', autocomplete='on', required='')
-                                    .col-lg-4.col-sm-4
-                                        fieldset
-                                            input.email(type='address', name='address', placeholder='Email Address...', autocomplete='on', required='')
-                                    .col-lg-4.col-sm-4
-                                        fieldset
-                                            button.main-button.text-dark.fw-bolder(type='submit', style='background-color: rgb(252, 176, 77);') Ask  Now
+        </section>
+        
+        .container
+            footer.page-footer
+                #free-quote.free-quote
+                    .container
+                        .row
+                            .col-lg-4.offset-lg-4
+                                .section-heading.wow.fadeIn
+                                    h6 You Need Help  ? 
+                                    h3.text-light Get In Touch With Us Now
+                            .col-lg-8.offset-lg-2.wow.fadeIn
+                                form#search(action='#', method='GET')
+                                    .row
+                                        .col-lg-4.col-sm-4
+                                            fieldset
+                                                input.website(type='web', name='web', placeholder='Your question is', autocomplete='on', required='')
+                                        .col-lg-4.col-sm-4
+                                            fieldset
+                                                input.email(type='address', name='address', placeholder='Email Address...', autocomplete='on', required='')
+                                        .col-lg-4.col-sm-4
+                                            fieldset
+                                                button.main-button.text-dark.fw-bolder(type='submit', style='background-color: rgb(252, 176, 77);') Ask  Now
