@@ -154,6 +154,11 @@ h1.display-3.text-primary.fw-bold {
   width: 100%;
   height: 590px;
 }
+@media (max-width: 768px) {
+  .car-img {
+    height: 400px;
+  }
+}
 
 a.find-parking {
   margin-left: 450px;
@@ -186,6 +191,15 @@ a.find-parking {
 
 nav.navbar {
   background-color: rgb(255, 255, 255);
+}
+
+h4.header {
+  background: #000000;
+}
+@media (max-width: 768px) {
+  h4.header {
+    background: #4da6e7;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

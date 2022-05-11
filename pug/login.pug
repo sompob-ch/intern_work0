@@ -1,5 +1,6 @@
 doctype html
 html
+  include includes/main.pug
   head
     title login
   style
@@ -24,7 +25,7 @@ html
                                             input.form-control.form-control-lg(type='password')
                                             label.form-label(for='form3Example4cg') Enter Your Password                                                        
                                         .d-flex.justify-content-center
-                                            a.btn.btn-lg.btn-success.hover-top.btn-glow.rounded-pill.border-0#button-login(href='index.html', tabindex='-1', role='button', aria-disabled='true') login
+                                            button.btn.btn-lg.btn-success.hover-top.btn-glow.rounded-pill.border-0#button-login(href='index.html', tabindex='-1', role='button', aria-disabled='true') login
                                         .col-6
                                             p.small.mb-0
                                                 | Don&apos;t have account? 
