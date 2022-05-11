@@ -5,28 +5,26 @@ html
         title booking 
     body
         main#top.main
-            nav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3.d-block(data-navbar-on-scroll='data-navbar-on-scroll', style='background-color: rgb(255, 255, 255);')
-                .container
-                    a.navbar-brand(href='./index.html')
-                        span.fw-bold.text-primary.ms-2 Let's park
-                    button.navbar-toggler.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-                        span.navbar-toggler-icon
-                    #navbarSupportedContent.collapse.navbar-collapse.border-top.border-lg-0.mt-4.mt-lg-0
-                        ul.navbar-nav.mx-auto.pt-2.pt-lg-0.font-base
-                        form
-                        a.btn.text-800.order-1.order-lg-0.me-2(href='home.html')
-                            i.bi-house-door
-                            | Home
-                        a.btn.btn-voyage-outline.order-0.text-primary(href='login.html')
-                            i.bi-person
-                            |  Logout 
-
+                nav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3.d-block(data-navbar-on-scroll='data-navbar-on-scroll')
+                    .container
+                        a.navbar-brand(href='./index.html')
+                            span.fw-bold.text-primary.ms-2 Let's park
+                        button.navbar-toggler.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                            span.navbar-toggler-icon
+                        #navbarSupportedContent.collapse.navbar-collapse.border-top.border-lg-0.mt-4.mt-lg-0
+                            ul.navbar-nav.mx-auto.pt-2.pt-lg-0.font-base
+                            a#navbar-collapse.btn.text-800.order-1.order-lg-0.me-2(href='index.html')
+                                i.bi-house-door
+                                | Home
+                            a.btn.btn-voyage-outline.order-0.text-primary(href='login.html')
+                                i.bi-person
+                                | Logout 
 
         section#book-box
             .container
                 .row.h-100
                 .col-lg-7.mx-auto.text-center.mb-6
-                    h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3(style='margin-top: 100px;') Pick the place that’s best for you
+                    h5.topic.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Pick the place that’s best for you
                 .row.g-1.flex-center
                     each val in ['A01', 'A02', 'A03', 'A04', 'A05','A06']
                         .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
@@ -67,4 +65,4 @@ html
                                                     input.email(type='address', name='address', placeholder='Email Address...', autocomplete='on', required='')
                                             .col-lg-4.col-sm-4
                                                 fieldset
-                                                    button.main-button.text-dark.fw-bolder(type='submit', style='background-color: rgb(252, 176, 77);') Ask  Now
+                                                    button.main-button.text-dark.fw-bolder.ask-now(type='submit') Ask  Now
