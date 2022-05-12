@@ -23,19 +23,41 @@ html
                                 .item.text-light.fw-bold.px-3.box-A.cover#item=val
                                     .text-light.fw-normal.fs-0 $9
                                     a.book-button(href='checkout.html')
-                                        button.main-button.text-light.box-A.button(type='submit') Book  Now 
-
+                                        button.main-button.text-light.box-A.button(type='submit') Book  Now
+                                        
                     each val in ['B01', 'B02', 'B03', 'B04', 'B05','B06']
                         .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
                             .item.text-light.fw-bold.px-3.box-B.cover#item= val
                                 .text-light.fw-normal.fs-0 $9
-                                a.book-button(href='checkout.html')
-                                    button.main-button.text-light.box-B.button(type='submit') Book  Now 
+                                button.book-button.text-light.box-B.button(type='button' data-bs-toggle='modal' data-bs-target='#staticBackdrop') Book  Now     
+                                #staticBackdrop.modal.fade(data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true')
+                                    .modal-dialog
+                                        .modal-content
+                                            .modal-header
+                                                h5.text-dark.modal-title Modal title
+                                                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                            .modal-body.text-dark
+                                                | ...
+                                            .modal-footer
+                                                button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                                                a(href='login.html')
+                                                    button.btn.btn-primary(type='button') OK  
                     
                     each val in ['C01', 'C02', 'C03', 'C04', 'C05','C06']
                         .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
                             .item.text-light.fw-bold.px-3.box-C.cover#item= val
                                 .text-light.fw-normal.fs-0 $9
-                                a.book-button(href='checkout.html')
-                                    button.main-button.text-light.box-C.button(type='submit') Book  Now 
+                                button.book-button.text-light.box-C.button(type='button' data-bs-toggle='modal' data-bs-target='#staticBackdrop') Book  Now     
+                                #staticBackdrop.modal.fade(data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true')
+                                    .modal-dialog
+                                        .modal-content
+                                            .modal-header
+                                                h5.text-dark.modal-title Modal title
+                                                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                            .modal-body.text-dark
+                                                | ...
+                                            .modal-footer
+                                                button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                                                a(href='login.html')
+                                                    button.btn.btn-primary(type='button') OK 
                 include footer.pug
