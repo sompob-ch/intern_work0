@@ -11,11 +11,17 @@ html
                 .col-lg-7.mx-auto.text-center.mb-6
                     h5.topic.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Pick the place that’s best for you
                 .row.g-1.flex-center
-                    each val in ['A01', 'A02', 'A03', 'A04', 'A05','A06']
-                        .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
-                            .item.text-light.px-3.box-A.cover#item= val
-                                a.book-button(href='checkout.html')
-                                    button.main-button.text-light.box-A.button(type='submit') Book  Now 
+                    -var names = ['A01', 'A02', 'A03', 'A04', 'A05','A06']
+                    each val , index in names
+                        if index < 3
+                            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                                .item.text-light.px-3.box-D.cover#item=val
+                                    .text-danger.fw-bold.text-center.box-D.button Booked
+                        else 
+                            .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2
+                                .item.text-light.px-3.box-A.cover#item=val
+                                    a.book-button(href='checkout.html')
+                                        button.main-button.text-light.box-A.button(type='submit') Book  Now 
 
                     each val in ['B01', 'B02', 'B03', 'B04', 'B05','B06']
                         .col-12.col-sm-4.col-md-3.col-lg-4.col-xl-2

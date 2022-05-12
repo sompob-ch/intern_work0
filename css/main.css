@@ -46,6 +46,16 @@ h5.topic {
   width: 100px;
 }
 
+.box-D.cover {
+  background-color: #818181;
+  min-height: 230px;
+}
+.box-D.button {
+  background-color: rgb(247, 247, 247);
+  border-radius: 0px;
+  margin-top: 100px;
+}
+
 .card-body {
   border-radius: 80px;
 }
