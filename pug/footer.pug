@@ -1,0 +1,26 @@
+doctype html
+html
+    include includes/main.pug
+    head
+      title home 
+    body
+        footer.page-footer
+            #free-quote.free-quote
+                .container
+                    .row
+                        .col-lg-4.offset-lg-4
+                            .section-heading.wow.fadeIn
+                                h6 You Need Help  ? 
+                                h3.text-light Get In Touch With Us Now
+                        .col-lg-8.offset-lg-2.wow.fadeIn
+                            form#search(action='#', method='GET')
+                                .row
+                                    .col-lg-4.col-sm-4
+                                        fieldset
+                                            input.website(type='web', name='web', placeholder='Your question is', autocomplete='on', required='')
+                                    .col-lg-4.col-sm-4
+                                        fieldset
+                                            input.email(type='email', name='address', placeholder='Email Address...', autocomplete='on', required='')
+                                    .col-lg-4.col-sm-4
+                                        fieldset
+                                            button.main-button.text-dark.fw-bolder.ask-now(type='submit') Ask  Now
