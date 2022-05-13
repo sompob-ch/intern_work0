@@ -1,0 +1,36 @@
+doctype html
+html
+    include includes/main.pug
+    head
+      title home 
+    body 
+      include navbar.pug
+    .container.p-0
+      .card.px-4
+        .card-body
+        h3.py-3 Payment Details
+        .row.gx-3
+          .col-12          
+            .d-flex.flex-column
+              p.text.mb-1 Person Name
+              |  
+              input.form-control.mb-3(type='text', placeholder='Name')
+          .col-12            
+            .d-flex.flex-column
+              p.text.mb-1 Card Number
+              |  
+              input.form-control.mb-3(type='text', placeholder='1234 5678 435678')
+          .col-6
+            .d-flex.flex-column
+              p.text.mb-1 Expiry
+              |  
+              input.form-control.input-box.mb-3(type='date') 
+          .col-6
+            .d-flex.flex-column
+              p.text.mb-1 CVV/CVC
+              |  
+              input.form-control.mb-3.pt-2(type='password', placeholder='***')
+        .col-12
+        button.btn.btn-lg.btn-warning.hover-top.btn-glow.pay-now(type='submit') Pay Now
+    .container
+        include footer.pug
