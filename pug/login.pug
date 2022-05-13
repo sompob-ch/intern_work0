@@ -1,34 +1,31 @@
 doctype html
 html
-  include includes/main.pug
-  head
-    title login
-  style
-    include  ../css/main.css
-    include  ../css/bootstrap.css 
-  body.login
-    .container     
-        section
-            a.navbar-brand(href='./index.html')
-                h2.span.fw-bold.text-primary.ms-2.text-center#text-logo Let's park
-            .mask.d-flex.align-items-center.h-100.gradient-custom-3
-                .container.h-100
-                    .row.d-flex.justify-content-center.align-items-center.h-100
-                        .col-12.col-md-9.col-lg-7.col-xl-6
-                            .card.login
-                                .card-body.p-5
-                                    h3.text-center.mb-5 Log in
-                                    form
-                                        .form-outline.mb-4
-                                            input.form-control.form-control-lg(type='email', name='address', placeholder='enter your email address', autocomplete='on', required='')
-                                            label.form-label(for='form3Example3cg') Enter Your Email
-                                        .form-outline.mb-4
-                                            input.form-control.form-control-lg(type='password')
-                                            label.form-label(for='form3Example4cg') Enter Your Password                                                        
-                                        .d-flex.justify-content-center
-                                            button.btn.btn-lg.btn-primary.hover-top.btn-glow.rounded-pill.border-0#button-login(href='index.html', tabindex='-1', role='button', aria-disabled='true') login
-                                        .col-6
-                                            p.small.mb-0
-                                                | Don&apos;t have account? 
-                                                a(href='pages-register.html') Create an account
+    include includes/main.pug
+    head
+      title login 
+    body.login
+        .container     
+            section
+                a.navbar-brand(href='./index.html')
+                    h2.span.fw-bold.text-primary.ms-2.text-center#text-logo Let's park
+                .mask.d-flex.align-items-center.h-100.gradient-custom-3
+                    .container.h-100
+                        .row.d-flex.justify-content-center.align-items-center.h-100
+                            .col-12.col-md-9.col-lg-7.col-xl-6
+                                .card.login
+                                    .card-body.p-5
+                                        h3.text-center.mb-5 Log in
+                                        form
+                                            .form-outline.mb-4
+                                                input.form-control.form-control-lg(type='email', name='address', placeholder='enter your email address', autocomplete='on', required='')
+                                                label.form-label(for='form3Example3cg') Enter Your Email
+                                            .form-outline.mb-4
+                                                input.form-control.form-control-lg(type='password')
+                                                label.form-label(for='form3Example4cg') Enter Your Password                                                        
+                                            .d-flex.justify-content-center
+                                                button.btn.btn-lg.btn-primary.hover-top.btn-glow.rounded-pill.border-0#button-login(href='index.html', tabindex='-1', role='button', aria-disabled='true') login
+                                            .col-6
+                                                p.small.mb-0
+                                                    | Don&apos;t have account? 
+                                                    a(href='pages-register.html') Create an account
 

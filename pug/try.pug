@@ -1,0 +1,11 @@
+doctype html
+html
+    include includes/main.pug
+    head
+      title try 
+    body 
+    mixin article(title)
+        h1= title         
+                          
+    +article('Hello world')
+    +article('ann')
